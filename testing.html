@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tes Zlotinmobiliaria</title>
+<link rel="stylesheet" href="css/Test-Style.css">
+<script>
+	
+	var color;
+	function cambio(color){
+		document.bgColor="red";
+	}
+	
+	function copia(estilo){
+		document.bgColor="blue";
+	}
+	
+	var edad;
+	
+	edad = prompt("cual es tu edad","");
+	
+	if(edad > 18 || edad < 70){
+		alert("En ora buen! usted tiene "+edad)
+	};
+	else{
+		
+	while(edad < 18 || edad > 70){
+		edad = prompt("Error, no está en el rango");
+		};
+	};
+	
+	</script>
+</head>
+
+<body>
+
+<main>
+	
+     <h2 class="ctos">Contacto 2</h2>
+
+   
+    <div class="contactbox">
+<form action="" method="POST">
+    <table class="contacto" onMouseMove="copia()" onMouseOut="cambio()" width="560" border="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Nombre:</td>
+      <td><input class="nombre" type="text" name="nombre" required placeholder="Escriba su nombre completo..."></td>
+    </tr>
+    <tr>
+      <td>Correo:</td>
+      <td><input class="correo" type="email" name="correo" required placeholder="ejemplo@mimail.com"></td>
+    </tr>
+
+    <tr>
+      <td>Ciudad:</td>
+      <td><select class="ciudad" name="ciudad"> 
+          <option value="null">--</option>    
+          <option value="1">Aguascalientes</option>
+          <option value="2">Cancún</option>
+          <option value="3">Cd.México</option>
+          <option value="4">Chihuahua</option>
+          <option value="5">Cuernavaca</option>
+          <option value="6">Guadalajara</option>
+          <option value="7">Hermosillo</option>
+          <option value="8">León</option>
+          <option value="9">Mérida</option>
+          <option value="10">Monterray</option>
+          <option value="11">Morelia</option>
+          <option value="12">Puebla</option>
+          <option value="13">Querétaro</option>
+          <option value="14">Saltillo</option>
+          <option value="15">San Luis Potosí</option>
+          <option value="16">Veracruz</option>
+          <option value="17">Toluca</option>
+          <option value="18">Otra</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>Género:</td>
+      <td>H: <input class="genero" type="radio" name="genero" value="Hombre"> M: <input type="radio" name="genero" value="Mujer"></td>
+    </tr>
+    <tr>
+      <td>Estado Civil</td>
+      <td>
+      <select class="civil" name="civil">      
+          <option value="null">--</option>
+          <option value="Cas">Casado(a)</option>
+          <option value="Viu">Viudo(a)</option>
+          <option value="Div">Divosriado(a)</option>
+          <option value="Sol">Soltéro(a)</option>
+          <option value="Otro">Otro</option>
+      </select></td>
+    </tr>
+        
+	<tr>
+		<td>Fecha de Cita</td>
+		<td class="calendario">
+		<input type="text" name="cita" id="Datepicker1">
+		</td>
+	</tr>
+   
+    
+    <tr>
+      <td>Comentarios:</td>
+      <td></td>
+    </tr>
+    <tr>
+    	<td class="comentarios" colspan="2"><textarea name="coment"></textarea></td>
+    </tr>
+    <tr>
+    	<td><input type="submit" onClick="cambio();" name="insert" value="Enviar" id="envio"></td>
+    </tr>
+  </tbody>
+</table>
+</form>
+</div>
+
+</section>
+
+<div class="ubicacion">
+<h4>Ubicación</h4>
+<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2471049392652!2d-99.20224022249198!3d19.304123610436115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffc52c288559%3A0xbbf00df264d9bbc0!2sPLAZA+IMAGEN!5e0!3m2!1ses!2smx!4v1487105058743" width="500px" height="350vh" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+</section>
+
+</main>
+
+
+</body>
+</html>

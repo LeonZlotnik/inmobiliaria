@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="Title" content="Zlotinmobiliaria">
+<meta name="Keywords" content="inmobiliaria, zlotinmobiliaria, zlotnik, departamentos, vivienda, casas, edificios CDMX, condominios, depas">
+<meta name="Description" content="">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Zlotinmobiliaria | Construyendo tu Futuro</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/Style.css" rel="stylesheet" type="text/css">
+<script src="../js/dropdown.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Zlotinmobiliaria</h1>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="qs.html">Blog</a></li>
+			<li><a href="proyectos.html">Proyectos</a></li>
+			<li><a href="contacto.php">Contacto</a></li>
+		</ul>
+	</nav>
+	
+	<button id="mini-menu"></button>
+
+<ul id="dropdown">
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="qs.html">Blog</a></li>
+	<li><a href="proyectos.html">Proyectos</a></li>
+	<li><a href="contacto.php">Contacto</a></li>
+</ul>
+	
+</header>	
+	
+<!-- TemplateBeginEditable name="content" -->
+<main>
+	<section>
+		<h2></h2>
+		<p></p>
+		<img src="" alt="">
+	</section>
+</main>
+
+<!-- TemplateEndEditable -->
+<footer>
+  <div class="tel">Tel:55-37-33-13-98</div>
+	
+ 
+    	<ul class="rs">
+    		<li><a href="https://www.facebook.com/Zlotinmobiliaria" target="_blank"><img src="../img/Facebook.png" width="24" height="auto" alt=""/></a></li>
+        	<li><a href="https://www.instagram.com" target="_blank"><img src="../img/Instagram.png" width="24" height="auto" alt=""/></a></li>
+        </ul>
+    
+   <div class="DW">Diseño Web :. León Zlotnik | Todos los derechos reservados</div> 
+</footer>
+</body>
+</html>
