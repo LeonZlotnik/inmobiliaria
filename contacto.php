@@ -45,9 +45,13 @@ if(isset($_POST["insert"])){
 
 <?php include_once('header.php'); ?>
 
+<script src="js/moment.js"></script>
+<script src="bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+<link href="bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
+
 <main>
 	
-     <h2 class="ctos">Contacto</h2>
+     <h2 class="h2">Contacto</h2>
 <br>
      <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -117,12 +121,24 @@ if(isset($_POST["insert"])){
                 </select>
               </div>
 
-      <div>
-        <label for="inputEmail4">Fecha de Cita</label>
-        <div class="calendario">
-        <input class="barra form-control" type="text" name="cita" id="Datepicker1">
+      
+        <div class='col-sm-6'>
+        <label for="inputDate">Fecha de Cita</label>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
         </div>
-      </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+
 
         </div>
 
@@ -149,107 +165,15 @@ if(isset($_POST["insert"])){
   </div>
 </div>
 
-	<!--<section class="columna col06">
-   
-    <div class="contactbox">
-<form action="" method="POST">
-    <table class="contacto" width="560" border="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td class="tx">Nombre:</td>
-      <td><input class="barra" type="text" name="nombre" required placeholder="Escriba su nombre completo..."></td>
-    </tr>
-    <tr>
-      <td class="tx">Correo:</td>
-      <td><input class="barra" type="email" name="correo" required placeholder="ejemplo@mimail.com"></td>
-    </tr>
-
-    <tr>
-      <td class="tx" >Ciudad:</td>
-      <td>
-         	<select class="barra" name="ciudad"> 
-          <option value="null">--</option>    
-          <option value="Aguascalientes">Aguascalientes</option>
-          <option value="Cancun">Cancún</option>
-          <option value="CDMX">Cd.México</option>
-          <option value="Chihuahua">Chihuahua</option>
-          <option value="Cuernavaca">Cuernavaca</option>
-          <option value="Guadalajara">Guadalajara</option>
-          <option value="Hermosillo">Hermosillo</option>
-          <option value="Leon">León</option>
-          <option value="Merida<">Mérida</option>
-          <option value="Monterrey">Monterrey</option>
-          <option value="Morelia">Morelia</option>
-          <option value="Puebla">Puebla</option>
-          <option value="Queretaro">Querétaro</option>
-          <option value="Saltillo">Saltillo</option>
-          <option value="San Luis Potosi">San Luis Potosí</option>
-          <option value="Veracruz">Veracruz</option>
-          <option value="Toluca">Toluca</option>
-          <option value="Otra">Otra</option>
-      		</select>
-      </td>
-    </tr>
-    <tr>
-      <td class="tx">Género:</td>
-      <td>H: <input type="radio" name="genero" value="Hombre"> M: <input type="radio" name="genero" value="Mujer"></td>
-    </tr>
-    <tr>
-      <td class="tx">Estado Civil</td>
-      <td>
-      <select class="barra" name="civil">      
-          <option value="null">--</option>
-          <option value="C">Casado(a)</option>
-          <option value="V">Viudo(a)</option>
-          <option value="D">Divosriado(a)</option>
-          <option value="S">Soltéro(a)</option>
-          <option value="Otro">Otro</option>
-      </select>
-      </td>
-    </tr>
-        
-	<tr>
-		<td class="tx">Fecha de Cita</td>
-		<td class="calendario">
-		<input class="barra" type="text" name="cita" id="Datepicker1">
-		</td>
-	</tr>
-   
-    
-    <tr>
-      <td class="tx">Comentarios:</td>
-      <td></td>
-    </tr>
-    <tr>
-    	<td class="comentarios" colspan="2"><textarea name="comentario"></textarea></td>
-    </tr>
-    <tr>
-    	<td><input type="submit" name="insert" value="Enviar" id="envio"></td>
-    </tr>
-  </tbody>
-</table>
-</form>
-</div>
-
-</section>-->
 
 <section class="ubicacion columna col5">
 <br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.0082848869497!2d-99.14114448536503!3d19.325446786945236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01ce6afe943d%3A0xead7a966258724eb!2sCalz.+de+Tlalpan+2601%2C+Emiliano+Zapata%2C+04610+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1546736256555" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.0082848869497!2d-99.14114448536503!3d19.325446786945236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01ce6afe943d%3A0xead7a966258724eb!2sCalz.+de+Tlalpan+2601%2C+Emiliano+Zapata%2C+04610+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1546736256555" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 </section>
 
 </main>
-
-<div class="clear"></div>
-<script src="js/formulario.js"></script>
-<script src="jquery-ui-1.12.1.custom/jquery-ui.min.css"></script>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$( "#Datepicker1" ).datepicker(); 
-});
-</script>
-<!-- InstanceEndEditable -->
 
 <?php include_once('footer.php');?>
 

@@ -24,23 +24,25 @@
 
     
     <section class="descripcion">
-    	<h2>Descripción</h2>
-    		<p class="visible">En este 2019 estamos arrancando con el pie derecho,  y estamos por terminar un nuevo complejo habitacional en Calz. de Tlalpan 2601, ubicando en la zona sur de Ciudad de México. Este nuevo desarrollo cuanta con un área de 398m2, en dónde hemos construido un condominio vertical de 7 pisos de altura. </p>
+    	<h2 class="h2">Descripción</h2>
+    		<p class="visible lead text-justify">En este 2019 estamos arrancando con el pie derecho,  y estamos por terminar un nuevo complejo habitacional en Calz. de Tlalpan 2601, ubicando en la zona sur de Ciudad de México. Este nuevo desarrollo cuanta con un área de 398m2, en dónde hemos construido un condominio vertical de 7 pisos de altura. </p>
        	
 			<input type="button" class="leer" id="lee" value="leer más...">
        	       	
-        	<p class="ocultar">Este nuevo complejo habitacional cuenta con 12 departamentos de 108 y 117 m2 y dos Penthouse. Lo más importante de este desarrollo y por lo que decidimos construir en esta ubicación, es la accesibilidad que tiene, ya que se encuentra a 200m de División del Norte y 1 Km de Anillo Periférico. El único acceso es por Calz. De Tlalpan, el cual forma parte de los 12 m de frente.</p>
-            <p class="ocultar">Cada departamento cuenta con un área de estar de 35.5m2, la cual incluye una cocina abierta, con cubierta de granito, estufa y campana.  Tres recamaras; una principal de 16m2 y dos recamaras chicas de 13 y 15 m2 (Todas las recamaras cuentan con su propio closet). Todos los departamentos cuentan con dos baños completos con cubierta de mármol y cancelería de aluminio. </p>
-            <p class="ocultar">Adicional, todos los departamentos cuenta con un cuarto de lavado y dos cajones de estacionamiento independientes. Lámparas de leds y sistema hidroneumático. </p>
-            <p class="ocultar">De acuerdo con la orientación del departamento, las dos recamaras chicas cuentan con un balcón cada una que da hacia la avenida. <p>
+        	<p class="ocultar lead text-justify">Este nuevo complejo habitacional cuenta con 12 departamentos de 108 y 117 m2 y dos Penthouse. Lo más importante de este desarrollo y por lo que decidimos construir en esta ubicación, es la accesibilidad que tiene, ya que se encuentra a 200m de División del Norte y 1 Km de Anillo Periférico. El único acceso es por Calz. De Tlalpan, el cual forma parte de los 12 m de frente.</p>
+            <p class="ocultar lead text-justify">Cada departamento cuenta con un área de estar de 35.5m2, la cual incluye una cocina abierta, con cubierta de granito, estufa y campana.  Tres recamaras; una principal de 16m2 y dos recamaras chicas de 13 y 15 m2 (Todas las recamaras cuentan con su propio closet). Todos los departamentos cuentan con dos baños completos con cubierta de mármol y cancelería de aluminio. </p>
+            <p class="ocultar lead text-justify">Adicional, todos los departamentos cuenta con un cuarto de lavado y dos cajones de estacionamiento independientes. Lámparas de leds y sistema hidroneumático. </p>
+            <p class="ocultar lead text-justify">De acuerdo con la orientación del departamento, las dos recamaras chicas cuentan con un balcón cada una que da hacia la avenida. <p>
             
     </section>
     
-    <div class="walkth">
-    	<iframe width="560" height="315" src="https://www.youtube.com/embed/RODwmMxLKa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="embed-responsive embed-responsive-21by9">
+    	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RODwmMxLKa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>   
 </main>
 
-<?php include_once('footer.php'); ?>
+
 </body>
 </html>
+
+<?php include_once('footer.php'); ?>
