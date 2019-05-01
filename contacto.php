@@ -2,26 +2,31 @@
 
 if(isset($_POST["insert"])){
 
-		$server = "107.180.4.42";
+		/*$server = "107.180.4.42";
 		$user = "leon9115";
 		$pword = "Zlotnl910";
-		$DBname = "0123clientes";
+    $DBname = "0123clientes";*/
+
+    $server = "localhost";
+		$user = "root";
+		$pword = "root";
+		$DBname = "inmobiliaria";
 	
 		$zname = $_POST['nombre'];
 		$zmail = $_POST['correo'];
 		$zcity = $_POST['ciudad'];
 		$zgender = $_POST['genero'];	
-		$zcivil = $_POST['civil'];
-		$zdate = $_POST['cita'];
+		$zinter = $_POST['inter'];
+		$ztel = $_POST['tel'];
 		$zcoment = $_POST['comentario'];
 	
-	$temp = explode("/",$zdate);
-	$fecha = "$temp[2]-$temp[1]-$temp[0]";
+	/*$temp = explode("/",$zdate);
+	$fecha = "$temp[2]-$temp[1]-$temp[0]";*/
 		
 	$connect = mysqli_connect($server,$user,$pword,$DBname) or die("error en conexion ".mysqli_connect_error());
 		mysqli_set_charset($connect, "utf8");
 	
-	$query = "INSERT INTO registros (nombre, correo, ciudad, genero, civil, cita, comentario) VALUES ('$zname','$zmail', '$zcity','$zgender','$zcivil','$zdate','$zcoment')";
+	$query = "INSERT INTO registros (nombre, correo, ciudad, genero, inter, tel, comentario) VALUES ('$zname','$zmail', '$ztel','$zgender','$zinter','$zdate','$zcoment')";
 	
 	$result = mysqli_query($connect,$query) or die ("error en query $query".mysqli_error());//
 	
@@ -39,7 +44,7 @@ if(isset($_POST["insert"])){
 	mysqli_free_result($result);
 	mysqli_close($connect);
 	
-	header("Location: index.html?z=1");
+	header("Location: index.php?z=1");
 } 
 ?>
 
@@ -50,13 +55,16 @@ if(isset($_POST["insert"])){
 <link href="bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
 
 <main>
-	
+
      <h2 class="h2">Contacto</h2>
 <br>
      <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
   Registrate para más Info
 </button>
+<br>
+<br>
+<h6 class="h6">TEL: +52 1 55 4359 1943</h6>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -69,29 +77,33 @@ if(isset($_POST["insert"])){
         </button>
       </div>
       <div class="modal-body">
-      <form>
+
+      <form action="" method="POST">
+
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputName">Nombre
             </label>
-            <input type="text" name="nombre" class="form-control" id="inputName" placeholder="Nombre">
+            <input type="text" name="nombre" class="form-control" id="inputName" placeholder="Nombre" required>
           </div>
+
           <div class="form-group col-md-6">
-            <label for="inputPassword4">Interes</label>
-            <select id="inputState" name="civil" class="form-control" >
-              <option selected>seleccione</option>
-              <option value="">Soltero</option>
-              <option value="">Recien Casado</option>
-              <option value="">Hijos</option>
-              <option value="">Mascota</option>
-              <option value="">Inversión</option>
-              <option value="">Otro</option>
+            <label for="inputPassword4">Interado</label>
+            <select id="inputState" name="inter" class="form-control" >
+              <option value="null">seleccione</option>
+              <option value="soltero">Soltero</option>
+              <option value="pareja">Pareja</option>
+              <option value="hijos">Con Hijos</option>
+              <option value="mascota">Con Mascota</option>
+              <option value="inversion">Como Inversión</option>
+              <option value="otro">Otro</option>
             </select>
           </div>
         </div>
+
         <div class="form-group">
           <label for="inputEmail4">Email</label>
-          <input type="email" name="correo" class="form-control" id="inputAddress" placeholder="ejemplo@email.com">
+          <input type="email" name="correo" class="form-control" id="inputAddress" placeholder="ejemplo@email.com" required>
         </div>
 
         <div class="form-row">
@@ -99,7 +111,7 @@ if(isset($_POST["insert"])){
         <div class="form-group col-md-6">
             <label for="inputPassword4">Ciudad</label>
                 <select id="inputState" name="ciudad" class="form-control" >
-                  <option selected>seleccione</option>
+                  <option value="null">seleccione</option>
                   <option value="Aguascalientes">Aguascalientes</option>
                   <option value="Cancun">Cancún</option>
                   <option value="CDMX">Cd.México</option>
@@ -108,7 +120,7 @@ if(isset($_POST["insert"])){
                   <option value="Guadalajara">Guadalajara</option>
                   <option value="Hermosillo">Hermosillo</option>
                   <option value="Leon">León</option>
-                  <option value="Merida<">Mérida</option>
+                  <option value="Merida">Mérida</option>
                   <option value="Monterrey">Monterrey</option>
                   <option value="Morelia">Morelia</option>
                   <option value="Puebla">Puebla</option>
@@ -122,22 +134,10 @@ if(isset($_POST["insert"])){
               </div>
 
       
-        <div class='col-sm-6'>
-        <label for="inputDate">Fecha de Cita</label>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
+        <div class="form-group col-md-6">
+            <label for="inputName">Telefono</label>
+            <input type="tel" name="tel" class="form-control" id="inputNumber" placeholder="#00-00-00" required>
+          </div>
 
 
         </div>
@@ -155,16 +155,16 @@ if(isset($_POST["insert"])){
             <div> Hombre <input type="radio" name="genero" value="Hombre"> Mujer <input type="radio" name="genero" value="Mujer"></div>
           </div>
         </div>
-    </form>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <input type="submit" name="insert" value="Enviar" class="btn btn-primary">
       </div>
     </div>
   </div>
 </div>
-
+</form>
 
 <section class="ubicacion columna col5">
 <br>

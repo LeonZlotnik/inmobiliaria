@@ -5,10 +5,11 @@
  				<img src="img/Facebook.png" width="24" height="auto" alt=""/>/Zlotinmobiliaria
              </a>
              
-             <a href="https://www.instagram.com" target="_blank">
+             <a href="https://www.instagram.com/betatestingstudio/" target="_blank">
  				<img src="img/Instagram.png" width="24" height="auto" alt=""/>zlotinmobiliaria
  			</a>
- 		
+         <br>
+         <br>
         	<!--<li><a href="https://www.instagram.com" target="_blank"><img src="img/Instagram.png" width="24" height="auto" alt=""/></a></li>-->
      
     

@@ -1,5 +1,6 @@
-<html>
 <?php include_once('header.php'); ?>
+<html>
+
 <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.css">
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="fancybox-master/dist/jquery.fancybox.js"></script>
