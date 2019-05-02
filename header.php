@@ -46,6 +46,7 @@
     <a class="dropdown-item" href="proyectos.php">Proyectos</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="contacto.php">Contactos</a>
+    <a class="dropdown-item" href="login.php">Login</a>
   </div>
 </div>
 </header>	

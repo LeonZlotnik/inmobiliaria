@@ -5,7 +5,7 @@
 
 <body>
 
-    <img src="https://media-cdn.tripadvisor.com/media/photo-b/1280x250/0f/82/a9/fc/plaza-de-mercado.jpg" class="img-fluid" alt="Responsive image">
+    <img src="https://pundiproperty.com/wp-content/uploads/2018/08/110-MUDB-v8-1-1280x250.jpg" class="img-fluid" alt="Responsive image">
     <br>
     <br>
     <div class="row">

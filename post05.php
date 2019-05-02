@@ -5,7 +5,7 @@
 
 <body>
 
-    <img src="https://media-cdn.tripadvisor.com/media/photo-b/1280x250/0f/82/a9/fc/plaza-de-mercado.jpg" class="img-fluid" alt="Responsive image">
+    <img src="https://www.acurite.com/media/magpleasure/mpblog/list_thumbnail_file/f/b/cache/1/ece9a24a761836a70934a998c163f8c8/fbb61f2d426c9d951ba17e62c1c05380.jpg" class="img-fluid" alt="Responsive image">
     <br>
     <br>
     <div class="row">

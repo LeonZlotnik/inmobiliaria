@@ -5,7 +5,7 @@
 
 <body>
 
-    <img src="https://media-cdn.tripadvisor.com/media/photo-b/1280x250/0f/82/a9/fc/plaza-de-mercado.jpg" class="img-fluid" alt="Responsive image">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-b/1280x250/03/9b/30/25/savannah.jpg" class="img-fluid" alt="Responsive image">
     <br>
     <br>
     <div class="row">

@@ -5,7 +5,7 @@
 
 <body>
 
-    <img src="https://media-cdn.tripadvisor.com/media/photo-b/1280x250/0f/82/a9/fc/plaza-de-mercado.jpg" class="img-fluid" alt="Responsive image">
+    <img src="https://www.cetelem.es/documents/34437/256401/bkg_gobierno_corporativo_cetelem.jpg/259efa77-1045-b8b8-044a-f447463afbb6?t=1498213170961" class="img-fluid" alt="Responsive image">
     <br>
     <br>
     <div class="row">
