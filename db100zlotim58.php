@@ -5,7 +5,7 @@
         <?php 
             $connect = mysqli_connect("localhost", "root", "root", "inmobiliaria");
             if ($connect-> connect_error){
-                die("La Conexion Fallo: ".$conect-> connect_error);
+                die("La Conexion Fallo: ".$connect-> connect_error);
             }
 
             echo "<table class='table table-hover'>

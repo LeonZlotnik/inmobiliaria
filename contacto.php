@@ -166,7 +166,7 @@ if(isset($_POST["insert"])){
 </div>
 </form>
 
-<section class="ubicacion columna col5">
+<section class="columna col5">
 <br>
 <div class="embed-responsive embed-responsive-21by9">
   <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.0082848869497!2d-99.14114448536503!3d19.325446786945236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01ce6afe943d%3A0xead7a966258724eb!2sCalz.+de+Tlalpan+2601%2C+Emiliano+Zapata%2C+04610+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1546736256555" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
