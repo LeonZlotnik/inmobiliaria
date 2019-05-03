@@ -9,7 +9,7 @@
     
 <main>
     <div class="fancybox">
-    	       <a href="img/recamaras-depas.png" data-fancybox data-caption="Cuenta con 2 recamaras chicas de 14m2 y una principal de 17m2 ">
+    	<a href="img/recamaras-depas.png" data-fancybox data-caption="Cuenta con 2 recamaras chicas de 14m2 y una principal de 17m2 ">
 			<img src="img/recamara-depas-edit.png" height="200px" width="300px" alt="" />
 		</a>
    		<a href="img/livingroom-depas.png" data-fancybox data-caption="Tienen un area de estar de 40m2. Espacio para sala, cocina y comedor">
@@ -18,8 +18,8 @@
    		<a href="img/bano-depas.png" data-fancybox data-caption="Cuenta con 2 baños completos de 5m2. Ya incluyen canceles">
 			<img src="img/bano-depas-edit.png" height="200px" width="300px" alt="" />
 		</a>
-   		<a href="img/render40.jpg" data-fancybox data-caption="Cocina: La cocina cuenta con sistema de ventilación R8X, el más avanzado">
-			<img src="img/render40-edit.png" height="200px" width="300px" alt="" />
+   		<a href="img/edificio-exterior.png" data-fancybox data-caption="El edificio cuenta con 14 departamentos, y un elevador. Cada departamendo cuenta con 2 cajones de estacionamiento.">
+			<img src="img/edificio-exterior-edit.png" height="200px" width="300px" alt="" />
 		</a>
     </div>
 
